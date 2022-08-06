@@ -3,11 +3,11 @@ var Schema = mongoose.Schema;
 
 
 var userSchema = new Schema({
-    name:{type:String,requerd:true},
+    name:String,
     description:String,
     age:Number,
     phoneNumber:Number,
-    email:{type:String,requerd:true}
+    email:String,
 },{timestamps:true});
 
 var User = mongoose.model('User',userSchema);
