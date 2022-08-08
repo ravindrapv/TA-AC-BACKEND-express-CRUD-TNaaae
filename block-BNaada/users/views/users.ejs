@@ -10,7 +10,9 @@
 <body>
  <div class="container">
     <h1>List of users</h1>
-    <%= users =%>
+    <% users.forEach(user => { %>
+       <h2><%= user.name %></h2>
+    <% }) %>
  </div>
 </body>
 </html>
