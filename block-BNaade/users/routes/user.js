@@ -25,7 +25,7 @@ router.post('/',(req,res,next) => {
     })
 })
 
-router.get('/:id',(req,res,next) => {
+router.get('/:id/edit',(req,res,next) => {
     var id = req.params.id;
     User.findByIdAndUpdate(id,(err,user) => {
         if(err) return next(err);
@@ -33,7 +33,7 @@ router.get('/:id',(req,res,next) => {
     })
 });
 
-router.post('/:id',(req,res,next) => {
+router.post('/:id/edit',(req,res,next) => {
     var id = req.params.id;
     User.findByIdAndUpdate(id,(err,user) => {
         if(err) return next(err);
